@@ -1,8 +1,8 @@
-@use "./base/base";
-@use "./base/typography";
-@use "./components/button";
-@use "./layout/navigation";
-@use "./layout/header";
-@use "./layout/footer";
-@use "./pages/home";
-@use "./pages/project";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/button";
+@import "./layout/navigation";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/home";
+@import "./pages/project";

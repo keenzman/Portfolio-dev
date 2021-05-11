@@ -1,5 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
+@use "./base" as *;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@use "./base" as *;
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navigation .navigation__list {
+  padding: 0px 20px;
+  margin: 25px 0;
+  list-style: none;
+}
+
+.navigation .navigation__list__item {
+  display: inline;
+  padding: 0 10px;
+}
+
+.navigation .navigation__link {
+  font-family: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-weight: 100;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.navigation__link:hover {
+  color: #0088a9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@use "./base" as *;
+.landing-header {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-header .landing-header__sub-heading,
+.landing-header .landing-header__main,
+.landing-header .landing-header__job {
+  font-size: 2rem;
+  font-family: 'Fira Code', monospace;
+  color: black;
+  font-weight: 100;
+}
+
+.landing-header .landing-header__main {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.landing-header .landing-header__job {
+  font-size: 3rem;
+}
+
+.landing-header .landing-header__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.projects {
+  height: 200vh;
+}
+/*# sourceMappingURL=main.css.map */
