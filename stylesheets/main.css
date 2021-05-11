@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,31 @@
 }
 
 @use "./base" as *;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@use "./base" as *;
+button {
+  padding: 15px 100px;
+  background-color: #0088a9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: aqua;
+  font-family: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -72,13 +98,14 @@
           justify-content: flex-start;
   position: relative;
   overflow: hidden;
+  padding: 0 25px;
 }
 
 .landing-header .landing-header__sub-heading,
 .landing-header .landing-header__main,
 .landing-header .landing-header__job {
   font-size: 2rem;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   color: black;
   font-weight: 100;
 }
@@ -90,6 +117,7 @@
 
 .landing-header .landing-header__job {
   font-size: 3rem;
+  padding-bottom: 25px;
 }
 
 .landing-header .landing-header__img {

@@ -20,7 +20,7 @@
     <img src="./images/crazy_pastel.jpeg" alt="pastel colours" 
     class="landing-header__img">
     <div class="landing-header__text-wrapper">
-      <h2 class="landing-header__sub-heading">Hi there </h2>
+      <h2 class="landing-header__sub-heading">Hi there</h2>
       <h1 class="landing-header__main">I'm <strong>Sakeen</strong>, </h1>
       <h2 class="landing-header__job">Jr Developer</h2>
       <button class="button landing-header__button">Contact Me</button>
@@ -29,6 +29,13 @@
 
   <section class="projects"></section>
 
-  <script type="javascript" src="main.js"></script>
+  <script>
+    window.addEventListener('scroll', function() {
+      const parallax = document.querySelector('.landing-header__img');
+      let scrollPosition = window.scrollY;
+
+      parallax.style.transform = 'translateY(' + scrollPosition *.5 + 'px)';
+    })
+  </script>
 </body>
 </html>

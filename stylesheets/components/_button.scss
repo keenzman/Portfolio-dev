@@ -1,0 +1,19 @@
+@import "../base/base";
+@import "../base/typography";
+
+button {
+  padding: 15px 100px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: aqua;
+  font-family: $secondary-font;
+  font-size: 1.2rem;
+
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
