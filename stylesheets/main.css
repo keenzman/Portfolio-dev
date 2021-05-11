@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fira+Mono&family=Roboto+Mono:wght@100&family=Work+Sans:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,20 +20,20 @@
 
 @use "./base" as *;
 button {
-  padding: 15px 100px;
-  background-color: #0088a9;
+  padding: 15px 80px;
+  background-color: #27eebe;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  color: aqua;
+  color: #2d5dbc;
   font-family: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   font-size: 1.2rem;
 }
 
 button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: rgba(247, 206, 255, 0.979);
 }
 
 * {
@@ -55,6 +56,8 @@ button:hover {
 .navigation .navigation__list {
   padding: 0px 20px;
   margin: 25px 0;
+  position: fixed;
+  z-index: 3;
   list-style: none;
 }
 
@@ -68,12 +71,13 @@ button:hover {
   font-weight: 100;
   color: black;
   text-decoration: none;
+  position: relative;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
 .navigation__link:hover {
-  color: #0088a9;
+  color: #27eebe;
 }
 
 * {
@@ -129,10 +133,61 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.07;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@use "./base" as *;
 .projects {
-  height: 200vh;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 20%;
+}
+
+.projects .projects__wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: auto;
+  margin-top: 20px;
+  padding-right: 15%;
+  font-family: "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  display: -ms-grid;
+  display: grid;
+}
+
+.projects .projects__wrapper .projects__icon {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 2.2rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #f18080;
+  cursor: pointer;
+}
+
+.projects .projects__wrapper .projects__icon:hover {
+  color: #27eebe;
+}
+
+.projects .glide {
+  margin-top: 5%;
+}
+
+.projects .glide .glide__slides {
+  height: 80vh;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

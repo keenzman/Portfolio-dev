@@ -1,0 +1,43 @@
+@import "../base/base";
+@import "../base/typography";
+
+.projects {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  // padding: 25px;
+  padding-left: 20%;
+
+  .projects__wrapper {
+    align-items: flex-start;
+    width: auto;
+    margin-top: 20px;
+    padding-right: 15%;
+    font-family: $secondary-font;
+
+    display: grid;
+    
+    .projects__icon {
+      justify-self: center;
+      font-size: 2.2rem;
+      transition: all 0.3s ease 0s;
+      color: rgb(241, 128, 128);
+      cursor: pointer;
+    }
+
+    .projects__icon:hover {
+        color: #27eebe;
+    }
+  }
+
+  .glide {
+    margin-top: 5%;
+
+    .glide__slides {
+      height: 80vh;
+      width: 100%;
+    }
+  }
+}
+

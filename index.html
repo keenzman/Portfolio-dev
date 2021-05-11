@@ -5,18 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./stylesheets/main.css"> 
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  <script src="https://kit.fontawesome.com/576390ed37.js" crossorigin="anonymous"></script>
   <title>Sakeen Zaman</title>
 </head>
 <body>
   <nav class="navigation">
     <ul class="navigation__list">
       <li class="navigation__list__item"><a href="#" class="navigation__link">About Me</a></li>
-      <li class="navigation__list__item"><a href="#" class="navigation__link">Projects</a></li>
-      <li class="navigation__list__item"><a href="#" class="navigation__link">Contact</a></li>
+      <li class="navigation__list__item"><a href="#projects-link-to" class="navigation__link">Projects</a></li>
+      <li class="navigation__list__item"><a href="#contact-link-to" class="navigation__link">Contact</a></li>
     </ul>
     
   </nav>
-  <header class="landing-header">
+  <header class="landing-header" id="contact-link-to">
     <img src="./images/crazy_pastel.jpeg" alt="pastel colours" 
     class="landing-header__img">
     <div class="landing-header__text-wrapper">
@@ -27,7 +30,30 @@
     </div>
   </header>
 
-  <section class="projects"></section>
+  <section class="projects">
+    <div class="projects__wrapper">
+      <h2 class="projects__sub-heading">Projects</h2>
+      <div class="fa fa-github projects__icon" aria-hidden="true">
+        <a href="https://github.com/keenzman" target="_blank"></a>
+      </div>
+      <div class="fa fa-linkedin projects__icon" aria-hidden="true">
+        <a href="https://www.linkedin.com/in/sakeen-zaman/" target="_blank"></a>
+      </div>
+    </div>
+    <div class="glide" id="projects-link-to">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide"><img src="./images/blue.jpg" alt="" class="glide__slide__img"></li>
+          <li class="glide__slide"><img src="./images/pink.jpg" alt="" class="glide__slide__img"></li>
+          <li class="glide__slide"><img src="./images/orange.jpg" alt="" class="glide__slide__img"></li>
+        </ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"> < </button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"> > </button>
+      </div>
+    </div>
+  </section>
 
   <script>
     window.addEventListener('scroll', function() {
@@ -36,6 +62,13 @@
 
       parallax.style.transform = 'translateY(' + scrollPosition *.5 + 'px)';
     })
+  </script>
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <script>
+    const config = {
+      type: 'slider',
+    }
+    new Glide('.glide', config).mount()
   </script>
 </body>
 </html>

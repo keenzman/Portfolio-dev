@@ -8,6 +8,8 @@
   .navigation__list {
     padding: 0px 20px;
     margin: 25px 0;
+    position: fixed;
+    z-index: 3;
     list-style: none;
   }
 
@@ -21,12 +23,13 @@
     font-weight: 100;
     color: black;
     text-decoration: none;
+    position: relative;
 
     transition: all 0.3s ease 0s;
   }
 
   &__link:hover {
-    color: #0088a9;
+    color: #27eebe;
   }
   
 }
