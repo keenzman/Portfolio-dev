@@ -54,21 +54,8 @@
       </div>
     </div>
   </section>
-
-  <script>
-    window.addEventListener('scroll', function() {
-      const parallax = document.querySelector('.landing-header__img');
-      let scrollPosition = window.scrollY;
-
-      parallax.style.transform = 'translateY(' + scrollPosition *.5 + 'px)';
-    })
-  </script>
+  
   <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-  <script>
-    const config = {
-      type: 'slider',
-    }
-    new Glide('.glide', config).mount()
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>

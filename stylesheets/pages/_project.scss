@@ -7,15 +7,16 @@
   display: flex;
   justify-content: flex-end;
   // padding: 25px;
-  padding-left: 20%;
+  padding-left: 13%;
 
   .projects__wrapper {
     align-items: flex-start;
     width: auto;
     margin-top: 20px;
-    padding-right: 15%;
+    padding-right: 13%;
     font-family: $secondary-font;
-
+    overflow: hidden;
+    
     display: grid;
     
     .projects__icon {
@@ -37,7 +38,14 @@
     .glide__slides {
       height: 80vh;
       width: 100%;
+
+      .glide__slide__img {
+        width: 100%;
+        height: fit-content;
+      }
     }
+
+    
   }
 }
 
