@@ -18,6 +18,7 @@
   "homepage": "https://github.com/keenzman/Portfolio-dev#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
-    "@glidejs/glide": "^3.4.1"
+    "@glidejs/glide": "^3.4.1",
+    "include-media": "^1.4.10"
   }
 }

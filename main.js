@@ -15,6 +15,9 @@ const config = {
     },
     800: {
       perView: 1,
+    },
+    600: {
+      perView: 1,
     }
   }
 }
